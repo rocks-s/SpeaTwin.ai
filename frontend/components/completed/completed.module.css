@@ -1,0 +1,70 @@
+.page {
+  min-height: 100vh;
+  padding: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0 0 24px;
+  font-size: 24px;
+  color: var(--violet-600);
+}
+
+.message {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.videoSection {
+  margin-bottom: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--color-bg-elevated);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-panel);
+}
+
+.video {
+  display: block;
+  width: 100%;
+  max-height: 70vh;
+  background: var(--violet-100);
+}
+
+.videoFallback {
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.videoFallback p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.videoFallback p + p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.downloadButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: var(--gradient-primary);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  box-shadow: 0 8px 22px rgba(124, 58, 237, 0.28);
+}
+
+.downloadButton:hover {
+  background: var(--gradient-primary-hover);
+  color: #ffffff;
+}

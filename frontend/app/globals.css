@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  /* Graphite */
+  --graphite-950: #0b0d12;
+  --graphite-900: #11141c;
+  --graphite-850: #171b25;
+  --graphite-800: #1e2330;
+  --graphite-700: #2a3142;
+  --graphite-600: #3a4358;
+
+  /* Blue */
+  --blue-500: #3b82f6;
+  --blue-400: #60a5fa;
+
+  /* Turquoise */
+  --turquoise-500: #14b8a6;
+  --turquoise-400: #2dd4bf;
+
+  /* Violet */
+  --violet-600: #7c3aed;
+  --violet-500: #8b5cf6;
+  --violet-400: #a78bfa;
+
+  /* Purple */
+  --purple-500: #c026d3;
+  --purple-400: #e879f9;
+
+  /* Semantic */
+  --color-bg: var(--graphite-950);
+  --color-bg-elevated: var(--graphite-850);
+  --color-bg-input: var(--graphite-900);
+  --color-bg-hover: var(--graphite-800);
+  --color-border: var(--graphite-700);
+  --color-border-subtle: var(--graphite-800);
+  --color-border-dashed: var(--graphite-600);
+
+  --color-text: #eef1f8;
+  --color-text-secondary: #c2c9d9;
+  --color-text-muted: #8b95a8;
+
+  --color-accent: var(--violet-500);
+  --color-accent-hover: var(--violet-600);
+  --color-link: var(--turquoise-400);
+  --color-link-hover: var(--turquoise-500);
+  --color-focus: var(--blue-400);
+
+  --gradient-primary: linear-gradient(
+    135deg,
+    var(--blue-500) 0%,
+    var(--violet-500) 52%,
+    var(--purple-500) 100%
+  );
+  --gradient-primary-hover: linear-gradient(
+    135deg,
+    var(--blue-400) 0%,
+    var(--violet-400) 52%,
+    var(--purple-400) 100%
+  );
+  --gradient-brand: linear-gradient(
+    90deg,
+    var(--turquoise-400) 0%,
+    var(--violet-400) 100%
+  );
+
+  --color-error-bg: rgba(192, 38, 211, 0.14);
+  --color-error-border: rgba(232, 121, 249, 0.35);
+  --color-error-text: #f5d0fe;
+
+  --shadow-panel: 0 8px 24px rgba(11, 13, 18, 0.35);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: var(--color-link);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
